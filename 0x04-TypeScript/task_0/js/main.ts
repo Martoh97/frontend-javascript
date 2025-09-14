@@ -19,7 +19,7 @@ let secondStudent: Student = {
     location: "Kiambu"
 }
 
-let studentList: Student[] = [firstStudent, secondStudent];
+let studentsList: Student[] = [firstStudent, secondStudent];
 
 // Render table
 const table = document.createElement("table");
@@ -37,7 +37,7 @@ headerRow.appendChild(headerLocation);
 table.appendChild(headerRow);
 
 // Loop through studentList and add rows
-studentList.forEach((student) => {
+studentsList.forEach((student) => {
     const row = document.createElement("tr");
 
     const nameCell = document.createElement("td");
